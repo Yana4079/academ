@@ -188,11 +188,13 @@ ul.bxslider {
     transform: scale(-1, 1);
     background: url(../img/slider/control.svg) no-repeat 47%;
     border-radius: 100%;
+    left: 0;
   }
   .bx-wrapper .bx-next {
     transform: scale(1, 1);
     background: url(../img/slider/control.svg) no-repeat 47%;
     border-radius: 100%;
+    right: 19px;
   }
 .bx-controls-direction {
   position: absolute;

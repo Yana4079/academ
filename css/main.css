@@ -498,7 +498,7 @@ h3 {
   font-family: "TTFirsNeueBold";
   color: #062A30;
   font-size: 45px;
-  max-width: 4.714em;
+  max-width: 4.914em;
   width: 100%;
   line-height: 0.66; }
   @media (min-width: 375px) {
@@ -1171,11 +1171,9 @@ p {
   top: 3.47em;
   right: -0.582em;
   background-color: #062A30;
-  padding: 34px;
-  padding: 2rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
+  padding: 1em;
+  width: 204px;
+  width: 12rem; }
 
 .menu__nav__active {
   -webkit-transform: scaleX(1) translateY(0);
