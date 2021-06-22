@@ -679,7 +679,7 @@ p {
       padding-right: 0; } }
 
 .hero {
-  background-image: url(../../img/hero_bg.jpg);
+  background-image: url(../img/hero_bg.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
@@ -703,7 +703,7 @@ p {
       padding-bottom: 3.6rem; } }
   @media (max-width: 495px) {
     .hero {
-      background-image: url(../../img/hero_bg-mob.jpg);
+      background-image: url(../img/hero_bg-mob.jpg);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -750,7 +750,7 @@ p {
         max-width: 17.6rem; } }
 
 .features {
-  background-image: url(../../img/features_bg.jpg);
+  background-image: url(../img/features_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
