@@ -1,0 +1,256 @@
+html {
+  font-family: $ff;
+  color: $text-bk;
+  box-sizing: border-box;
+  @include fFS(17px, 20px, 420px, 1920px, 20px);
+  line-height: 115.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 345px;
+  max-width: 1920px;
+  min-height: 100vh;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.footer {
+  flex-grow: 0;
+}
+
+a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  min-width: 345px;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 0 9rem;
+  width: 100%;
+
+  @include bp(1650px) {
+    padding: 0 4rem;
+  }
+
+  @include bp(1500px) {
+    padding: 0 4rem;
+  }
+
+  @include bp(1000px) {
+    padding: 0 4rem;
+  }
+
+  @include bp(900px) {
+    padding: 0 2rem;
+  }
+
+
+
+  @include bp(420px) {
+    padding: 0 0.582rem;
+  }
+}
+
+
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.hero__logo img {
+  @include bp(420px) {
+    max-width: 70%;
+  }
+}
+
+/*helpers*/
+
+.center {
+  text-align: center;
+}
+
+
+
+.active_menu {
+  border-radius: 70px;
+  background-color: $color-green;
+  padding: 0.5em 2.4em;
+}
+
+.flex {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/*typografy*/
+h1 {
+  display: inline-block;
+  color: $text-wt;
+  @include fFS(45px, 90px, 375px, 1920px, 10px);
+  line-height: 0.92;
+
+  @include bp(1200px) {
+    @include fFS(40px, 50px, 375px, 1200px, 10px);
+  }
+
+  @include bp(800px) {
+    @include fFS(30px, 40px, 375px, 1920px, 10px);
+  }
+
+  @include bp(495px) {
+    max-width: 16.8rem;
+  }
+}
+
+h2 {
+  display: inline-block;
+  font-family: $ff2;
+  color: $text-wt;
+  @include fFS(15px, 25px, 375px, 1920px, 10px);
+
+  @include bp(1200px) {
+    @include fFS(15px, 20px, 375px, 1200px, 10px);
+  }
+
+  @include bp(1200px) {
+    @include fFS(15px, 12px, 375px, 1200px, 10px);
+  }
+}
+
+h3 {
+  display: inline-block;
+  font-family: $ff;
+  color: $text-bk;
+  @include fFS(45px, 70px, 375px, 1920px, 10px);
+  max-width: 4.714em;
+  width: 100%;
+  line-height: 0.66;
+}
+
+p {
+  line-height: 1.5;
+
+  @include bp(420px) {
+    font-size: 12px;
+  }
+}
+
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include bp(495px) {
+    flex-wrap: wrap;
+  }
+}
+
+.col {
+  &--30 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    flex: 0 1 30%;
+    width: 100%;
+    margin-left: -0.6rem;
+    padding-left: 0.6rem;
+    align-self: flex-end;
+
+    @include bp(495px) {
+      flex: 1 1 100%;
+      padding-left: 0;
+      margin-left: -0.582rem;
+      margin-right: -0.582rem;
+    }
+  }
+
+  &--45 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    z-index: 1;
+    flex: 0 1 45%;
+    margin-left: -3.65rem;
+    padding-left: 3.65rem;
+    align-self: flex-end;
+
+    @include bp(495px) {
+      flex: 1 1 100%;
+      margin-left: -0.582rem;
+      margin-right: -0.582rem;
+      padding-left: 0;
+      margin-top: 2.176rem;
+    }
+  }
+
+  &--50 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    flex: 0 1 50%;
+    width: 100%;
+
+    @include bp(495px) {
+      flex: 1 1 100%;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  &--55 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    flex: 0 1 55%;
+    margin-right: -3.65rem;
+    padding-right: 3.65rem;
+
+    @include bp(495px) {
+      flex: 0 1 100%;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+
+  &--70 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    flex: 0 1 70%;
+    margin-right: -0.6rem;
+    padding-right: 0.6rem;
+
+    @include bp(495px) {
+      flex: 0 1 100%;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}

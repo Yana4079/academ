@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'TTFirsNeueBold';
+    src: local('TTFirsNeue'),
+         url('../fonts/TTFirsNeue-DemiBold.ttf') format('truetype'),
+         url('../fonts/TTFirsNeue-DemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TTFirsNeue-DemiBold.woff') format('woff'); 
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Regular */
+
+@font-face {
+    font-family: 'TTFirsNeueReg';
+    src: local('TTFirsNeue'),
+         url('../fonts/TTFirsNeue-Regular.ttf') format('truetype'),
+         url('../fonts/TTFirsNeue-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TTFirsNeue-Regular.woff') format('woff'); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+

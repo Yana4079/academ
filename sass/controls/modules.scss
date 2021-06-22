@@ -1,0 +1,285 @@
+.menu--desc {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    @include fFS(17px, 20px, 375px, 1920px, 10px);
+    @include flex-menu;
+    background: linear-gradient(to right, #062A30 95%, #00764B 90px);
+    background-color: #062A30;
+    font-family: $ff2;
+    color: $text-wt;
+    padding: 0.6em 0;
+
+    @include bp(1371px) {
+        @include fFS(6px, 16px, 375px, 1213px, 6px);
+    }
+
+    @include bp(495px) {
+        display: none;
+    }
+
+    &__logo {
+        margin-left: 3.75em;
+
+        @include bp(1371px) {
+            margin-left: 2.75em;
+        }
+
+        @include bp(1000px) {
+            margin-left: 2em;
+        }
+
+        @include bp(900px) {
+            margin-left: 2rem;
+        }
+
+        @include bp(800px) {
+            margin-left: 1rem;
+        }
+
+        img {
+            max-width: 5.45em;
+
+            @include bp(1000px) {
+                max-width: 3.45em;
+            }
+        }
+    }
+
+    &__item {
+        @include flex;
+    }
+
+    &__contact {
+        margin-right: 7em;
+
+        @include bp(1213px) {
+            margin-right: 5em;
+        }
+    }
+
+}
+
+.nav {
+    &__list {
+        @include flex;
+    }
+}
+
+.nav__item+.nav__item {
+    margin-left: 2.5em;
+}
+
+.menu__mob {
+    display: none;
+    z-index: 2;
+
+    @include bp(495px) {
+        @include fFS(14px, 17px, 320px, 375px, 10px);
+        padding: 1.41em 0;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        color: $text-wt;
+        background-color: #062A30;
+    }
+}
+
+.menu__nav {
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: scaleX(0) translateY(20%);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.47em;
+    right: -0.582em;
+    background-color: #062A30;
+    padding: 1rem;
+    width: max-content;
+}
+
+.menu__nav__active {
+    transform: scaleX(1) translateY(0);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__block {
+    @include flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu__nav-link {
+    display: inline-block;
+}
+
+.menu__nav-link+.menu__nav-link {
+    margin-top: 0.5em;
+}
+
+
+
+.btn__color {
+    background-color: #00764B;
+}
+
+
+.content {
+    display: none;
+}
+
+.content.is-active {
+    display: block;
+
+}
+
+.form__content {
+    @include fFS(10px, 20px, 375px, 1920px, 10px);
+    color: $text-wt;
+    max-width: 31.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 4.35em;
+    height: 100%;
+    background-color: $color-green;
+    border-radius: 10px;
+    padding-bottom: 3.35em;
+    padding-top: 1em;
+
+    @include bp(1200px) {
+        padding: 1em 2.35em 3.35em;
+    }
+
+    @include bp(495px) {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 0.582rem 1.824rem;
+        border-radius: 0;
+    }
+}
+
+.form__content--tabs {
+    @include fFS(10px, 20px, 375px, 1920px, 10px);
+    color: $text-wt;
+    max-width: 24.95em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 3em;
+    height: 100%;
+    background-color: $color-green;
+    border-radius: 10px;
+    padding-bottom: 3.35em;
+    padding-top: 1em;
+
+    @include bp(1200px) {
+        padding: 1em 2.35em 3.35em;
+    }
+
+    @include bp(495px) {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 0.582rem 1.824rem;
+        border-radius: 0;
+    }
+}
+
+.form__content::before {
+    content: '';
+    padding-top: 213px;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(49.5%, transparent), color-stop(50%, #00764B)) left/50.025% 100% no-repeat, -webkit-gradient(linear, right top, left bottom, color-stop(49.5%, transparent), color-stop(50%, #00764B)) right/50.025% 100% no-repeat;
+    background: linear-gradient(to right bottom, transparent 49.5%, #00764B 50%) left/50.025% 100% no-repeat, linear-gradient(to left bottom, transparent 49.5%, #00764B 50%) right/50.025% 100% no-repeat;
+    position: absolute;
+    top: -208px;
+    left: 73px;
+    right: 2px;
+    border-radius: 10px;
+    z-index: -1;
+
+    @include bp(1920px) {
+        top: -209px;
+        left: 81px;
+    }
+
+    @include bp(1680px) {
+        top: -136px;
+        padding-top: 139px;
+        left: 70px;
+    }
+
+    @include bp(800px) {
+        top: -116px;
+        padding-top: 120px;
+        left: 66px;
+    }
+
+    @include bp(495px) {
+        display: none;
+    }
+}
+
+.form__title {
+    @include fFS(40px, 60px, 375px, 1920px, 10px);
+    line-height: 1;
+
+    @include bp(1200px) {
+        @include fFS(40px, 50px, 375px, 1920px, 10px);
+    }
+
+    @include bp(800px) {
+        @include fFS(30px, 40px, 375px, 1920px, 10px);
+    }
+}
+
+.form__subtitle {
+    @include fFS(15px, 25px, 375px, 1920px, 10px);
+    font-family: $ff2;
+    margin: 0.73em 0;
+
+    @include bp(1200px) {
+        @include fFS(15px, 20px, 375px, 1200px, 10px);
+    }
+
+    @include bp(1200px) {
+        @include fFS(15px, 12px, 375px, 1200px, 10px);
+    }
+}
+
+.backPhone__tel {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 70px;
+    border: 1px solid $text-wt;
+    text-align: center;
+    color: $text-wt;
+    font-family: $ff2;
+    margin-bottom: 1.8rem;
+}
+
+.backPhone__btn {
+    @include fFS(13px, 15px, 375px, 1920px, 10px);
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 70px;
+    color: $text-bk;
+    background-color: $text-wt;
+    box-shadow: 0px 13px 32px rgba(0, 0, 0, 0.25);
+}
+
+input::-webkit-input-placeholder {
+    color: $text-wt;
+}
+
+input::-moz-placeholder {
+    color: $text-wt;
+}

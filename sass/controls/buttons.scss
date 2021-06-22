@@ -1,0 +1,67 @@
+.menu__btn {
+    display: block;
+    width: 2.235em;
+    height: 2.235em;
+    @include flex;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 50%;
+        height: 0.253em;
+        margin-top: -0.176em;
+        width: 100%;
+        background-color: $text-wt;
+        border-radius: 70px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            transition: 0.5s;
+            display: block;
+            top: 50%;
+            height: 0.253em;
+            margin-top: -0.176em;
+            width: 100%;
+            background-color: $text-wt;
+            border-radius: 70px;
+            transform: translateY(-0.8em);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            transition: 0.5s;
+            position: absolute;
+            top: 50%;
+            height: 0.253em;
+            margin-top: -0.176em;
+            width: 100%;
+            background-color: $text-wt;
+            border-radius: 70px;
+            transform: translateY(0.8em);
+        }
+    }
+    &--active {
+        span {
+           height: 0; 
+        }
+        span::before {
+          transform: rotate(45deg);  
+        }
+        span::after {
+            transform: rotate(-45deg);  
+          }
+    }
+}
+
+.btn__scroll {
+    margin-top: 8.1rem;
+    @include bp(1680px) {
+        margin-top: 6rem;
+    }
+}
+.btn__scroll a {
+   max-width: 2.95rem;
+   width: 100%;
+}
