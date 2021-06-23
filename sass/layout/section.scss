@@ -3,15 +3,15 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top center;
-    max-height: 1080px;
-    height: 100%;
+    max-height: 100vh;
+    height: 100vh;
     display: block;
     background-attachment: fixed;
     background-color: #062A30;
     padding-bottom: 6.5rem;
 
     @include bp(1680px) {
-        max-height: 860px;
+        max-height: 100vh;
         padding-bottom: 3.6rem;
         background-size: cover;
     }
@@ -101,7 +101,7 @@
         @include fFS(12px, 18px, 375px, 1920px, 10px);
 
         @include bp(495px) {
-            margin: 3rem 0;
+            margin: 2rem 0;
         }
 
         &--item {
@@ -254,11 +254,8 @@
 
 .price__content--hashtags {
     max-width: 100%;
-    border-top: 4px solid $color-green;
-    border-left: 4px solid $color-green;
     flex-direction: column;
     max-width: 332px;
-
     @include bp(495px) {
         flex-wrap: wrap;
         max-width: 202px;
@@ -268,20 +265,30 @@
     div {
         display: flex;
         align-items: center;
+        align-self: stretch;
     }
 
 }
 
-.price__content--hashtags--container {
+// .price__content--hashtags--container {
+//     border-bottom: 0.222em solid $color-green;
+// }
+
+.hashtags-1 {
+    border-left: 0.222em solid $color-green;
+    border-top: 0.222em solid $color-green;
     border-bottom: 0.222em solid $color-green;
+    @include bp(495px) {
+        border-right: 0;
+        border-left: 0;
+    }
 }
-
-
 
 .hashtags-2 {
     border-right: 0.222em solid $color-green;
     border-left: 0.222em solid $color-green;
-
+    border-top: 0.222em solid $color-green;
+    border-bottom: 0.222em solid $color-green;
     @include bp(495px) {
         border-right: 0;
     }
@@ -289,7 +296,11 @@
 
 .hashtags-3 {
     border-right: 0.222em solid $color-green;
+    border-left: 0.222em solid $color-green;
     border-bottom: 0.222em solid $color-green;
+    @include bp(495px) {
+        border-left: 0;
+    }
 }
 
 .price__content--text-name {

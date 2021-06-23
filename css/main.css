@@ -683,8 +683,8 @@ p {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
-  max-height: 1080px;
-  height: 100%;
+  max-height: 100vh;
+  height: 100vh;
   display: block;
   background-attachment: fixed;
   background-color: #062A30;
@@ -692,7 +692,7 @@ p {
   padding-bottom: 6.5rem; }
   @media (max-width: 1680px) {
     .hero {
-      max-height: 860px;
+      max-height: 100vh;
       padding-bottom: 3.6rem;
       background-size: cover; } }
   @media (max-width: 1000px) {
@@ -798,7 +798,7 @@ p {
         font-size: 18px; } }
     @media (max-width: 495px) {
       .price__tabs {
-        margin: 3rem 0; } }
+        margin: 2rem 0; } }
     .price__tabs--item span {
       cursor: pointer;
       padding: 1.308em 1.944em;
@@ -996,8 +996,6 @@ p {
 
 .price__content--hashtags {
   max-width: 100%;
-  border-top: 4px solid #00764B;
-  border-left: 4px solid #00764B;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1015,21 +1013,35 @@ p {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -ms-flex-item-align: stretch;
+    align-self: stretch; }
 
-.price__content--hashtags--container {
+.hashtags-1 {
+  border-left: 0.222em solid #00764B;
+  border-top: 0.222em solid #00764B;
   border-bottom: 0.222em solid #00764B; }
+  @media (max-width: 495px) {
+    .hashtags-1 {
+      border-right: 0;
+      border-left: 0; } }
 
 .hashtags-2 {
   border-right: 0.222em solid #00764B;
-  border-left: 0.222em solid #00764B; }
+  border-left: 0.222em solid #00764B;
+  border-top: 0.222em solid #00764B;
+  border-bottom: 0.222em solid #00764B; }
   @media (max-width: 495px) {
     .hashtags-2 {
       border-right: 0; } }
 
 .hashtags-3 {
   border-right: 0.222em solid #00764B;
+  border-left: 0.222em solid #00764B;
   border-bottom: 0.222em solid #00764B; }
+  @media (max-width: 495px) {
+    .hashtags-3 {
+      border-left: 0; } }
 
 .price__content--text-name {
   margin-bottom: 39.95px;
@@ -1313,9 +1325,9 @@ p {
       left: 81px; } }
   @media (max-width: 1750px) {
     .form__content::before {
-      top: -136px;
+      top: -142px;
       padding-top: 145px;
-      left: 70px; } }
+      left: 74px; } }
   @media (max-width: 1650px) {
     .form__content::before {
       top: -140px;
