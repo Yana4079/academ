@@ -822,6 +822,12 @@ p {
       @media (max-width: 750px) {
         .price__tabs--item span {
           padding: 1em 0.5em; } }
+      @media (max-width: 495px) {
+        .price__tabs--item span {
+          padding: 1em 2.2em; } }
+      @media (max-width: 350px) {
+        .price__tabs--item span {
+          padding: 1em 2em; } }
     .price__tabs--btn {
       font-size: 12px;
       padding: 1.461em 3.385em;
@@ -872,6 +878,12 @@ p {
         border-right: 1rem solid #fff;
         border-top: 1rem solid #fff;
         border-bottom: 1rem solid #fff; } }
+    @media (max-width: 495px) {
+      .price__img {
+        border-left: 4.4rem solid #fff;
+        border-right: 4.4rem solid #fff;
+        border-top: 2.6rem solid #fff;
+        border-bottom: 2.6rem solid #fff; } }
   .price__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -890,6 +902,9 @@ p {
           max-width: 100%;
           width: 100%;
           margin-right: 1.55rem; } }
+      @media (max-width: 495px) {
+        .price__content-left {
+          margin-right: 0; } }
     @media (max-width: 1650px) {
       .price__content-right {
         max-width: 100%;
