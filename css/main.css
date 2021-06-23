@@ -796,6 +796,16 @@ p {
     @media (min-width: 1920px) {
       .price__tabs {
         font-size: 18px; } }
+    @media (max-width: 750px) {
+      .price__tabs {
+        font-size: 12px; } }
+  @media (max-width: 750px) and (min-width: 375px) {
+    .price__tabs {
+      font-size: 10px;
+      font-size: 12px; } }
+  @media (max-width: 750px) and (min-width: 1920px) {
+    .price__tabs {
+      font-size: 12px; } }
     @media (max-width: 495px) {
       .price__tabs {
         margin: 2rem 0; } }
@@ -809,6 +819,9 @@ p {
       @media (max-width: 815px) {
         .price__tabs--item span {
           padding: 1em 1.4em; } }
+      @media (max-width: 750px) {
+        .price__tabs--item span {
+          padding: 1em 0.5em; } }
     .price__tabs--btn {
       font-size: 12px;
       padding: 1.461em 3.385em;
@@ -853,6 +866,12 @@ p {
     border-top: 2.6rem solid #fff;
     border-bottom: 44.2px solid #fff;
     border-bottom: 2.6rem solid #fff; }
+    @media (max-width: 750px) {
+      .price__img {
+        border-left: 1rem solid #fff;
+        border-right: 1rem solid #fff;
+        border-top: 1rem solid #fff;
+        border-bottom: 1rem solid #fff; } }
   .price__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1300,6 +1319,12 @@ p {
   @media (max-width: 1200px) {
     .form__content--tabs {
       padding: 1em 2.35em 3.35em; } }
+  @media (max-width: 750px) {
+    .form__content--tabs {
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+      padding: 2rem 0.582rem 1.824rem; } }
   @media (max-width: 495px) {
     .form__content--tabs {
       padding: 0;
@@ -1334,6 +1359,11 @@ p {
       top: -116px;
       padding-top: 120px;
       left: 66px; } }
+  @media (max-width: 750px) {
+    .form__content--tabs::before {
+      top: -114px;
+      padding-top: 119px;
+      left: 11px; } }
   @media (max-width: 495px) {
     .form__content--tabs::before {
       display: none; } }
@@ -1499,7 +1529,7 @@ input::-moz-placeholder {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       display: block;
-      top: 50%;
+      top: 77%;
       height: 0.253em;
       margin-top: -0.176em;
       width: 100%;

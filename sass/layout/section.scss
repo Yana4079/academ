@@ -99,7 +99,9 @@
         align-items: center;
         margin-bottom: 4.2rem;
         @include fFS(12px, 18px, 375px, 1920px, 10px);
-
+        @include bp(750px) {
+            @include fFS(12px, 12px, 375px, 1920px, 10px);
+        }
         @include bp(495px) {
             margin: 2rem 0;
         }
@@ -116,6 +118,9 @@
 
                 @include bp(815px) {
                     padding: 1em 1.4em;
+                }
+                @include bp(750px) {
+                    padding: 1em 0.5em;
                 }
 
             }
@@ -149,6 +154,12 @@
         border-right: 4.4rem solid #fff;
         border-top: 2.6rem solid #fff;
         border-bottom: 2.6rem solid #fff;
+        @include bp(750px) {
+            border-left: 1rem solid #fff;
+            border-right: 1rem solid #fff;
+            border-top: 1rem solid #fff;
+            border-bottom: 1rem solid #fff;
+        }
     }
 
     &__content {

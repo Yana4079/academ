@@ -184,6 +184,12 @@
     @include bp(1200px) {
         padding: 1em 2.35em 3.35em;
     }
+    @include bp(750px) {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem 0.582rem 1.824rem;
+    }
 
     @include bp(495px) {
         padding: 0;
@@ -224,6 +230,11 @@
         top: -116px;
         padding-top: 120px;
         left: 66px;
+    }
+    @include bp(750px) {
+        top: -114px;
+        padding-top: 119px;
+        left: 11px;
     }
 
     @include bp(495px) {
