@@ -1308,6 +1308,36 @@ p {
       padding: 2rem 0.582rem 1.824rem;
       border-radius: 0; } }
 
+.form__content--tabs::before {
+  content: '';
+  padding-top: 213px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(49.5%, transparent), color-stop(50%, #00764B)) left/50.025% 100% no-repeat, -webkit-gradient(linear, right top, left bottom, color-stop(49.5%, transparent), color-stop(50%, #00764B)) right/50.025% 100% no-repeat;
+  background: linear-gradient(to right bottom, transparent 49.5%, #00764B 50%) left/50.025% 100% no-repeat, linear-gradient(to left bottom, transparent 49.5%, #00764B 50%) right/50.025% 100% no-repeat;
+  position: absolute;
+  top: -208px;
+  left: 73px;
+  right: 2px;
+  border-radius: 10px;
+  z-index: -1; }
+  @media (max-width: 1920px) {
+    .form__content--tabs::before {
+      top: -142px;
+      padding-top: 146px;
+      left: 15px; } }
+  @media (max-width: 1650px) {
+    .form__content--tabs::before {
+      top: -140px;
+      padding-top: 144px;
+      left: 12px; } }
+  @media (max-width: 800px) {
+    .form__content--tabs::before {
+      top: -116px;
+      padding-top: 120px;
+      left: 66px; } }
+  @media (max-width: 495px) {
+    .form__content--tabs::before {
+      display: none; } }
+
 .form__content::before {
   content: '';
   padding-top: 213px;
@@ -1320,10 +1350,6 @@ p {
   border-radius: 10px;
   z-index: -1; }
   @media (max-width: 1920px) {
-    .form__content::before {
-      top: -209px;
-      left: 81px; } }
-  @media (max-width: 1750px) {
     .form__content::before {
       top: -142px;
       padding-top: 145px;

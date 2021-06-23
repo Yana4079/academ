@@ -1,3 +1,10 @@
+$('a[data-target^="anchor"]').bind('click.smoothscroll', function () {
+  var target = $(this).attr('href'),
+   bl_top = $(target).offset().top - 5;
+  $('body, html').animate({ scrollTop: bl_top }, 700);
+  return false;
+ });
+
 $('.menu__btn').on('click', function (e) {
   e.preventDefault();
   $(this).toggleClass('menu__btn--active');
@@ -19,3 +26,5 @@ $('[data-open-block]').on('click', function() {
 	$('[data-content]').removeClass(activeCls);
   $(`[data-content="${$(this).data('open-block')}"`).addClass(activeCls);
 });
+
+
