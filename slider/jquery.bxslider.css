@@ -198,7 +198,11 @@ ul.bxslider {
   }
   .bx-wrapper .bx-prev:hover,
 .bx-wrapper .bx-prev:focus {
-  transform: scale(-1, 1);
+  transform: scale(0, 0);
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  transform: scale(0, 0);
 }
 .bx-controls-direction {
   position: absolute;
