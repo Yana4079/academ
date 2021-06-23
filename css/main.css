@@ -1002,7 +1002,7 @@ p {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 391px; }
+  max-width: 332px; }
   @media (max-width: 495px) {
     .price__content--hashtags {
       -ms-flex-wrap: wrap;

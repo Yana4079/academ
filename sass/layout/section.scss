@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../../img/hero_bg.jpg);
+    background-image: url(../img/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top center;
@@ -24,7 +24,7 @@
     }
 
     @include bp(495px) {
-        background-image: url(../../img/hero_bg-mob.jpg);
+        background-image: url(../img/hero_bg-mob.jpg);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,7 +71,7 @@
 }
 
 .features {
-    background-image: url(../../img/features_bg.jpg);
+    background-image: url(../img/features_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -257,7 +257,7 @@
     border-top: 4px solid $color-green;
     border-left: 4px solid $color-green;
     flex-direction: column;
-    max-width: 391px;
+    max-width: 332px;
 
     @include bp(495px) {
         flex-wrap: wrap;
