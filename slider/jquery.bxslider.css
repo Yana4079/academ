@@ -196,6 +196,10 @@ ul.bxslider {
     border-radius: 100%;
     right: 19px;
   }
+  .bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  transform: scale(1, =1);
+}
 .bx-controls-direction {
   position: absolute;
   right: 63px;

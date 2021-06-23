@@ -211,9 +211,14 @@
         left: 81px;
     }
 
-    @include bp(1680px) {
+    @include bp(1750px) {
         top: -136px;
-        padding-top: 139px;
+        padding-top: 145px;
+        left: 70px;
+    }
+    @include bp(1650px) {
+        top: -140px;
+        padding-top: 144px;
         left: 70px;
     }
 
@@ -278,8 +283,10 @@
 
 input::-webkit-input-placeholder {
     color: $text-wt;
+    font-size: 18px;
 }
 
 input::-moz-placeholder {
     color: $text-wt;
+    font-size: 18px;
 }
